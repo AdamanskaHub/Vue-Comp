@@ -7,10 +7,11 @@
                 <button @click="selectedComponent = 'appNew'">New</button>
                 <hr>
                 <p>{{ selectedComponent }}</p>
-               <app-quote>
+                <component :is="selectedComponent"></component>
+               <!-- <app-quote>
                    <h2 slot="title">{{ quoteTitle }}</h2>
                    <p slot="content">You may delay but time will not</p>
-               </app-quote>
+               </app-quote> -->
             </div>
         </div>
     </div>
