@@ -25,7 +25,7 @@
         data: function () {
             return {
                 quoteTitle: "Title passed in data",
-                selectedComponent: 'app-quote', // appQuote
+                selectedComponent: 'app-quote', // appQuote - c'est la valeure défaut
             }
         },
         components: {
