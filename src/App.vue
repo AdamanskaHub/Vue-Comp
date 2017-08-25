@@ -7,7 +7,11 @@
                 <button @click="selectedComponent = 'appNew'">New</button>
                 <hr>
                 <p>{{ selectedComponent }}</p>
-                <component :is="selectedComponent"></component>
+                
+                <keep-alive>
+                    <component :is="selectedComponent"></component>
+                </keep-alive>  
+                
                <!-- <app-quote>
                    <h2 slot="title">{{ quoteTitle }}</h2>
                    <p slot="content">You may delay but time will not</p>
